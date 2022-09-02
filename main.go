@@ -33,6 +33,7 @@ func main() {
 			log.Fatal(err)
 		}
 
-		fmt.Println(maze.GetExitPath(m))
+		fmt.Printf("Maze: %s\n", sample.Name())
+		fmt.Printf("\t- %s \n", maze.GetExitPath(m))
 	}
 }
