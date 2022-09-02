@@ -12,7 +12,7 @@ type Maze map[string]any
 // PrettyPrint - prints a indented JSON
 // representation of Maze.
 func (m *Maze) PrettyPrint() {
-	b, err := json.MarshalIndent(*m, "", "	")
+	b, err := json.MarshalIndent(*m, "", "    ")
 	if err != nil {
 		panic(err)
 	}
