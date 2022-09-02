@@ -26,6 +26,8 @@ func findShortestPath(m Maze, start bool) []string {
 			case i == "exit" && !start:
 				path := []string{k}
 				return path
+			case i == "exit" && start:
+				paths = append(paths, []string{k})
 			case i != "exit" && !start:
 				return []string{}
 			}
