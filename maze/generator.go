@@ -38,4 +38,7 @@ func NewMaze() Maze {
 // 	- [-1; 0) => Monster
 // 	- (0;+1] => Another Room.
 //
-// That's a few approaches that I can think of right now.
+// That's a few approaches that I can think of right now, and all of them have a
+// chance of not having an exit, so, the Generator could have a limit of runs,
+// and if reached that limit without and "exit" it would generate one by force,
+// or even, with each "run", it could increase the chance of generating an "exit".
